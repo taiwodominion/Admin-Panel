@@ -4,7 +4,7 @@ import Header from '../components/Header'
 import AboutCustomers from '../components/aboutCustomers'
 import CustomersStatus from '../components/CustomersStatus'
 
-const Customers = () => {
+const CustomersPage = () => {
   return (
     <div className="dashboard-layout">
       <aside>
@@ -23,4 +23,4 @@ const Customers = () => {
   )
 }
 
-export default Customers
+export default CustomersPage
