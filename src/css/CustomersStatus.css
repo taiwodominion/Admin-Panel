@@ -1,0 +1,138 @@
+.customers-status .container {
+  background: white;
+  border-radius: 20px;
+  margin-top: 40px;
+  padding: 20px;
+}
+
+.customer-table-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.customer-table-head .search_filter {
+  display: flex;
+  gap: 30px;
+}
+
+.customer-table-head .search_filter input {
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background: rgb(243, 242, 242);
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.233);
+}
+
+.customer-table-head .search_filter input:focus {
+  border: 1px solid rgb(79, 79, 245);
+}
+
+.customer-table-head .search_filter .filter-dropdown {
+  background: rgb(243, 242, 242);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.customer-table-head-texts h1 {
+  font-size: 1.3rem;
+}
+
+.customer-table-head-texts p {
+  font-size: 14px;
+  padding-top: 10px;
+}
+
+.customers-grid-header {
+  display: grid;
+  grid-template-columns: 16.6% 16.6% 16.6% 18.6% 14.6% 16.6%;
+  align-items: center;
+  padding: 35px 16px 35px 0;
+  margin-bottom: 10px;
+  border-radius: 16px;
+  font-weight: 500;
+}
+
+.customers-grid-row {
+  display: grid;
+  grid-template-columns: 16.6% 16.6% 16.6% 18.6% 14.6% 16.6%;
+  align-items: center;
+  padding: 8px 16px 8px 0;
+  border-radius: 16px;
+}
+
+.customers-grid-row span {
+  font-size: 14px;
+}
+
+.customers-grid-row .table-status-positive {
+  background: rgba(9, 221, 9, 0.342);
+  border: 1px solid green;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 5px;
+  color: rgb(44, 167, 44);
+}
+
+.customers-grid-row .table-status-negative {
+  background: rgba(221, 9, 9, 0.342);
+  border: 1px solid rgb(128, 0, 0);
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 5px;
+  color: rgb(167, 44, 44);
+}
+
+.customers-grid-row:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.customers-grid-header div {
+  font-size: 14px;
+  color: var(--primary-color);
+}
+
+@media (max-width: 1000px) {
+  .customers-status .container {
+    padding: 10px;
+  }
+
+  .customers-status {
+    overflow-x: scroll;
+  }
+
+  .customer-table-head-texts h1 {
+    font-size: 17px;
+  }
+
+  .customer-table-head .search_filter {
+    display: flex;
+    gap: 15px;
+  }
+  .customer-table-head .search_filter input {
+    padding: 5px;
+  }
+
+  .customer-table-head .search_filter .filter-dropdown {
+    padding: 5px;
+    font-size: 13px;
+  }
+
+  .customers-grid-header {
+    grid-template-columns: 16.6% 16.6% 16.6% 18.6% 17.6% 16.6%;
+    padding: 35px 0 35px 0;
+    margin-bottom: 10px;
+    border-radius: 16px;
+    font-size: 13px;
+  }
+
+  .customers-grid-row {
+    grid-template-columns: 16.6% 16.6% 16.6% 18.6% 14.6% 16.6%;
+    padding: 8px 0 8px 0;
+  }
+
+  .customers-grid-row span {
+    font-size: 12px;
+  }
+}
