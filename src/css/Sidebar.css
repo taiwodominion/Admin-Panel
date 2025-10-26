@@ -194,6 +194,7 @@
     transform: translateX(-100%);
     transition: transform 0.3s ease;
     width: 15rem;
+    height: 110vh;
   }
 
   .sidebar.show {
