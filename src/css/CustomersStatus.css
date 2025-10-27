@@ -26,7 +26,7 @@
   outline: none;
   border: none;
   background: rgb(243, 242, 242);
-  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.233);
+  /* box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.233); */
 }
 
 .customer-table-head .search_filter input:focus {
@@ -103,6 +103,10 @@
     padding: 10px;
   }
 
+  .customer-table-head {
+    gap: 20px;
+  }
+
   .customer-table-head .search_filter {
     gap: 15px;
   }
@@ -113,11 +117,20 @@
 
   .customer-table-head .search_filter .filter-dropdown {
     padding: 5px;
-    font-size: 13px;
+    font-size: 12px;
+  }
+
+  .customers-grid {
+    padding-top: 40px;
   }
 
   .customers-grid-header {
     font-size: 13px;
+  }
+
+  .customers-grid-row {
+    gap: 10px;
+    margin-bottom: 20px;
   }
 
   .customers-grid-row span {

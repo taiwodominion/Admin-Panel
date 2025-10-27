@@ -1,7 +1,7 @@
 import React from 'react'
 import Sidebar from '../components/Sidebar'
 import Header from '../components/Header'
-import AboutCustomers from '../components/aboutCustomers'
+import AboutCustomers from '../components/AboutCustomers'
 import CustomersStatus from '../components/CustomersStatus'
 
 const CustomersPage = () => {

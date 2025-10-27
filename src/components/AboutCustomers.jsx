@@ -1,4 +1,7 @@
 import React from 'react'
+import eclipseImg1 from '../assets/icons/profile-2user.png'
+import eclipseImg2 from '../assets/icons/profile-tick.png';
+import eclipseImg3 from '../assets/icons/monitor.png';
 import '../css/AboutCustomers.css'
 
 const AboutCustomers = () => {
@@ -6,7 +9,9 @@ const AboutCustomers = () => {
     <div className='about-customers'>
         <div className="container">
             <div className="box">
-                <div className="eclipse"></div>
+                <div className="eclipse">
+                    <img src={eclipseImg1} alt="" />
+                </div>
                 <div className="info">
                     <p>Total Customers</p>
                     <h2>5,423</h2>
@@ -14,7 +19,9 @@ const AboutCustomers = () => {
                 </div>
             </div>
             <div className="box">
-                <div className="eclipse"></div>
+                <div className="eclipse">
+                    <img src={eclipseImg2} alt="" />
+                </div>
                 <div className="info">
                     <p>Members</p>
                     <h2>1,893</h2>
@@ -22,7 +29,9 @@ const AboutCustomers = () => {
                 </div>
             </div>
             <div className="box">
-                <div className="eclipse"></div>
+                <div className="eclipse">
+                    <img src={eclipseImg3} alt="" />
+                </div>
                 <div className="info">
                     <p>Active Now</p>
                     <h2>189</h2>
