@@ -17,7 +17,7 @@ const Sidebar = () => {
   const navItems = [
     { label: "Dashboard", to: "/", icon: dashboardIcon },
     { label: "Product", to: "/product", icon: productIcon },
-    { label: "Customers", to: "/customers", icon: userIcon },
+    { label: "Customers", to: "/customer", icon: userIcon },
     { label: "Income", to: "/income", icon: walletIcon },
     { label: "Promote", to: "/promote", icon: discountIcon },
     { label: "Help", to: "/help", icon: messageIcon },
@@ -25,7 +25,6 @@ const Sidebar = () => {
 
   return (
     <div className="sidebar-wrapper">
-      {/* ✅ Hamburger Button */}
       <button
         className={`hamburger ${menuActive ? "active" : ""}`}
         onClick={(e) => {
@@ -39,7 +38,6 @@ const Sidebar = () => {
         <span></span>
       </button>
 
-      {/* ✅ Sidebar */}
       <aside className={`sidebar ${menuActive ? "show" : ""}`}>
         <div className="container">
           <div className="sidebar-header">

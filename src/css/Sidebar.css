@@ -25,8 +25,8 @@
 
 .hamburger span:nth-child(2),
 .hamburger span:last-child {
-    width: 50%;
-} 
+  width: 50%;
+}
 
 .hamburger.active span:nth-child(1) {
   transform: rotate(45deg) translateY(8px);
@@ -39,7 +39,6 @@
 .hamburger.active span:nth-child(3) {
   transform: rotate(-45deg) translateY(-8px);
 }
-
 
 .sidebar {
   position: fixed;
@@ -116,7 +115,7 @@
 }
 
 .nav-item.active img {
-    color: white;
+  color: white;
 }
 
 .nav-item-name {
@@ -131,64 +130,83 @@
 }
 
 .sidebar-footer {
-    padding: 10px;
+  padding: 10px;
 }
 
 .footer-card {
-    background: linear-gradient(to right, #EAABF0, #4623E9);
-    padding: 20px;
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-    text-align: center;
-    color: #fef1ff;
-    font-size: 14px;
+  background: linear-gradient(to right, #eaabf0, #4623e9);
+  padding: 20px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+  color: #fef1ff;
+  font-size: 14px;
 }
 
 .footer-card button {
-    padding: 10px;
-    border-radius: 20px;
-    border: none;
-    width: 100%;
-    background: white;
-    color: #4623E9;
-    font-weight: 600;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  width: 100%;
+  background: white;
+  color: #4623e9;
+  font-weight: 600;
 }
 
 .footer-user {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
 }
 
 .footer-user-info {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-user-info h2 {
-    font-size: 15px;
+  font-size: 15px;
 }
 
 .footer-user-info p {
-    font-size: 13px;
+  font-size: 13px;
 }
 
 @media (max-width: 1000px) {
-    .hamburger {
-  display: flex;
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  z-index: 300;
-  border: none;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
+  .hamburger {
+    display: flex;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 300;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .sidebar-header {
+    padding: 0.8rem;
+    height: 70px;
+  }
+
+  .sidebar-nav {
+    padding: 0 1rem;
+  }
+
+  .logo h1 {
+    font-weight: 500;
+    font-size: 0.9rem;
+  }
+
+  .logo img {
+    width: 20px;
+    height: 20px;
+  }
 
   .sidebar {
     transform: translateX(-100%);
@@ -207,12 +225,12 @@
     height: 100%;
   }
 
-  .nav-item {
+  .nav-item-name {
     justify-content: center;
   }
 
-  .nav-item-name {
-    justify-content: center;
+  .nav-item {
+    padding: 0.3rem 0.8rem;
   }
 
   .nav-icon-img {

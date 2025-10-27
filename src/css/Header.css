@@ -1,24 +1,35 @@
 .header-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
 }
 
 .header-container input {
-    padding: 10px;
-    border-radius: 10px;
-    outline: none;
-    border: none;
-    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.233);
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.233);
 }
 
 .header-container input:focus {
-    border: 1px solid rgb(79, 79, 245);
+  border: 1px solid rgb(79, 79, 245);
 }
 
 @media (max-width: 1000px) {
-    .header-container {
-        padding: 10px 70px 10px 10px;
-    }
+  .header-container {
+    padding: 10px 50px 10px 10px;
+  }
+
+  .header-container input {
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.233);
+  }
+
+  .user-name {
+    font-size: 15px;
+    font-weight: 600;
+  }
 }

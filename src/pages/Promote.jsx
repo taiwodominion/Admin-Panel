@@ -2,7 +2,7 @@ import React from 'react'
 import Sidebar from '../components/Sidebar'
 import Header from '../components/Header'
 
-const Product = () => {
+const Promote = () => {
   return (
     <div className="dashboard-layout">
       <aside>
@@ -20,4 +20,4 @@ const Product = () => {
   )
 }
 
-export default Product
+export default Promote

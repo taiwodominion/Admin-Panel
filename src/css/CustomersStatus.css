@@ -3,17 +3,21 @@
   border-radius: 20px;
   margin-top: 40px;
   padding: 20px;
+  overflow-x: auto;
 }
 
 .customer-table-head {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .customer-table-head .search_filter {
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
 }
 
 .customer-table-head .search_filter input {
@@ -93,23 +97,16 @@
   color: var(--primary-color);
 }
 
+
 @media (max-width: 1000px) {
   .customers-status .container {
     padding: 10px;
   }
 
-  .customers-status {
-    overflow-x: scroll;
-  }
-
-  .customer-table-head-texts h1 {
-    font-size: 17px;
-  }
-
   .customer-table-head .search_filter {
-    display: flex;
     gap: 15px;
   }
+
   .customer-table-head .search_filter input {
     padding: 5px;
   }
@@ -120,19 +117,53 @@
   }
 
   .customers-grid-header {
-    grid-template-columns: 16.6% 16.6% 16.6% 18.6% 17.6% 16.6%;
-    padding: 35px 0 35px 0;
-    margin-bottom: 10px;
-    border-radius: 16px;
     font-size: 13px;
-  }
-
-  .customers-grid-row {
-    grid-template-columns: 16.6% 16.6% 16.6% 18.6% 14.6% 16.6%;
-    padding: 8px 0 8px 0;
   }
 
   .customers-grid-row span {
     font-size: 12px;
   }
+}
+
+@media (max-width: 768px) {
+  .customers-grid-header {
+    display: none;
+  }
+
+  .customers-grid-body {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .customers-grid-row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #f7f7f7;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  }
+
+  .customers-grid-row span {
+    font-size: 14px;
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .customers-grid-row span::before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: #555;
+  }
+
+  .customers-grid-row .table-name::before { content: "Name"; }
+  .customers-grid-row span:nth-child(2)::before { content: "Company"; }
+  .customers-grid-row span:nth-child(3)::before { content: "Phone"; }
+  .customers-grid-row span:nth-child(4)::before { content: "Email"; }
+  .customers-grid-row span:nth-child(5)::before { content: "Country"; }
+  .customers-grid-row span:nth-child(6)::before { content: "Status"; }
 }
